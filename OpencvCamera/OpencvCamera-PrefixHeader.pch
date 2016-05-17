@@ -1,0 +1,23 @@
+//
+//  OpencvCamera-PrefixHeader.pch
+//  OpencvCamera
+//
+//  Created by Anastasia Tarasova on 16/05/16.
+//  Copyright © 2016 Anastasia Tarasova. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iPhone SDK 5.0 and later."
+#endif
+
+#ifdef __cplusplus
+    #import <opencv2/opencv.hpp>
+#endif
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+#endif
